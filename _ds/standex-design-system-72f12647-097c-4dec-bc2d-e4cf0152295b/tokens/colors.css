@@ -1,0 +1,60 @@
+/* Standex Brand Color Standards — Brand Standards BXG9.0, p.7
+   Recommended balance: Blue 60% / Off White 15% / Gray 10% / Green 10% / Aqua 5%.
+   "When in doubt, use more Blue and less accent color." */
+:root{
+  /* ---- Base brand palette (exact brand values) ---- */
+  --standex-blue:#254061;      /* PMS 534  RAL 5008  rgb(37,64,97)    60% usage */
+  --standex-green:#77933C;     /* PMS 576  RAL 6011  rgb(119,147,60)  10% usage */
+  --standex-aqua:#215968;      /* PMS 7699 RAL 5021  rgb(33,89,104)    5% usage */
+  --standex-gray:#53565A;      /* Cool Gray 11 RAL 7015 rgb(83,86,90) 10% usage */
+  --standex-off-white:#F4F6FA; /* PMS 663  RAL 9003                   15% usage */
+  --standex-white:#FFFFFF;
+
+  /* ---- Blue ramp (tints/shades of Standex Blue) ---- */
+  --blue-900:#111e2e;
+  --blue-800:#182b41;
+  --blue-700:#1e3450;
+  --blue-600:#254061;
+  --blue-500:#3c5b80;
+  --blue-400:#5c7899;
+  --blue-300:#8ba1b9;
+  --blue-200:#bccada;
+  --blue-100:#dde5ee;
+  --blue-050:#eef2f8;
+
+  /* ---- Green ramp ---- */
+  --green-700:#4e6127;
+  --green-600:#617a31;
+  --green-500:#77933C;
+  --green-400:#93ab63;
+  --green-300:#b4c593;
+  --green-200:#d5dfc2;
+  --green-100:#eaefe1;
+
+  /* ---- Aqua ramp ---- */
+  --aqua-700:#153a44;
+  --aqua-600:#1b4a56;
+  --aqua-500:#215968;
+  --aqua-400:#4c7d8a;
+  --aqua-300:#84a7b1;
+  --aqua-200:#bdd0d6;
+  --aqua-100:#e3ebee;
+
+  /* ---- Neutral ramp (cool gray, from Cool Gray 11) ---- */
+  --gray-900:#1f2124;
+  --gray-800:#33363a;
+  --gray-700:#43464a;
+  --gray-600:#53565A;
+  --gray-500:#71757a;
+  --gray-400:#9a9ea3;
+  --gray-300:#c2c5c9;
+  --gray-200:#dcdfe2;
+  --gray-100:#eceef1;
+  --gray-050:#F4F6FA;
+
+  /* ---- Status (derived; not defined in the brand book — see readme) ---- */
+  --status-success:#77933C;
+  --status-info:#215968;
+  --status-warning:#B4801F;
+  --status-danger:#9E2C24;
+}

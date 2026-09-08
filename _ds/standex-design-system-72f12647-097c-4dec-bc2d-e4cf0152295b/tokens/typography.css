@@ -1,0 +1,39 @@
+/* Type scale. Source Sans Pro; Semibold (600) is the brand's headline weight
+   (division descriptors in the logo lockups use Semibold). */
+:root{
+  --font-weight-light:300;
+  --font-weight-regular:400;
+  --font-weight-semibold:600;
+  --font-weight-bold:700;
+  --font-weight-black:900;
+
+  --font-size-display-1:72px;
+  --font-size-display-2:56px;
+  --font-size-h1:44px;
+  --font-size-h2:34px;
+  --font-size-h3:26px;
+  --font-size-h4:21px;
+  --font-size-h5:18px;
+  --font-size-body-lg:19px;
+  --font-size-body:17px;
+  --font-size-body-sm:15px;
+  --font-size-caption:13px;
+  --font-size-micro:11px;
+
+  --line-height-tight:1.05;
+  --line-height-heading:1.16;
+  --line-height-snug:1.35;
+  --line-height-body:1.6;
+  --line-height-loose:1.75;
+
+  --letter-spacing-display:-0.02em;
+  --letter-spacing-heading:-0.01em;
+  --letter-spacing-body:0em;
+  --letter-spacing-eyebrow:0.14em;
+  --letter-spacing-button:0.02em;
+
+  /* Print-derived sizes from the brand book, kept for document work */
+  --print-name-size:12pt;   /* email signature name, Bold */
+  --print-title-size:11pt;  /* email signature title */
+  --print-meta-size:9.5pt;  /* email signature company line, all caps */
+}

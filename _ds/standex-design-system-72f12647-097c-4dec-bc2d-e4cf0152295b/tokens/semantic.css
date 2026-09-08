@@ -1,0 +1,66 @@
+/* Semantic aliases — use these in components, not the raw ramps. */
+:root{
+  /* Text */
+  --text-heading:var(--blue-600);
+  --text-body:var(--gray-600);
+  --text-muted:var(--gray-500);
+  /* --text-subtle is a NON-TEXT token: 2.69:1 on white. Legal for disabled labels,
+     placeholder glyphs, hairline icons and decorative rules only — never for
+     readable copy, and never at or below 14px. Use --text-muted (4.64:1) instead. */
+  --text-subtle:var(--gray-400);
+  --text-on-dark:var(--standex-white);
+  --text-on-dark-muted:rgba(255,255,255,.76);
+  --text-link:var(--blue-600);
+  --text-link-hover:var(--aqua-500);
+  --text-accent:var(--green-500);
+
+  /* Surfaces */
+  --surface-page:var(--standex-white);
+  --surface-subtle:var(--standex-off-white);
+  --surface-card:var(--standex-white);
+  --surface-card-subtle:var(--standex-off-white);
+  --surface-inverse:var(--blue-600);
+  --surface-inverse-deep:var(--blue-800);
+  --surface-accent:var(--aqua-500);
+  --surface-highlight:var(--green-500);
+  --surface-overlay:rgba(17,30,46,.62);
+
+  /* Borders */
+  --border-subtle:var(--gray-200);
+  --border-default:var(--gray-300);
+  --border-strong:var(--blue-600);
+  --border-on-dark:rgba(255,255,255,.28);
+  --rule-accent:var(--green-500);
+
+  /* Controls — brand button spec, p.15 */
+  --button-primary-bg:var(--blue-600);
+  --button-primary-fg:var(--standex-white);
+  --button-primary-bg-hover:var(--standex-white);
+  --button-primary-fg-hover:var(--blue-600);
+  --button-primary-border-hover:var(--blue-600);
+  --button-primary-bg-active:var(--blue-700);
+  --button-secondary-bg:transparent;
+  --button-secondary-fg:var(--blue-600);
+  --button-secondary-border:var(--blue-600);
+  --button-height:52px;
+  --button-height-sm:40px;
+  --button-height-lg:60px;
+  --button-padding-x:32px;
+
+  /* Fields */
+  --field-bg:var(--standex-white);
+  --field-bg-disabled:var(--gray-100);
+  --field-border:var(--border-default);
+  --field-border-focus:var(--standex-blue);
+  --field-text:var(--text-heading);
+  --field-placeholder:var(--text-subtle);
+  --control-accent:var(--standex-blue);
+  --control-track:var(--gray-300);
+  --control-knob:var(--standex-white);
+  --tooltip-bg:var(--blue-800);
+  --tooltip-fg:var(--standex-white);
+
+  /* Focus */
+  --focus-ring:var(--shadow-focus);
+  --focus-ring-on-dark:0 0 0 3px rgba(255,255,255,.55);
+}

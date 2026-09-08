@@ -1,0 +1,15 @@
+/* The brand book specifies a 33px corner radius for web buttons (p.15) —
+   effectively a pill on a ~52px control. Panels and cards stay square or
+   near-square; the industrial identity is orthogonal, not soft. */
+:root{
+  --radius-none:0px;
+  --radius-xs:2px;
+  --radius-sm:4px;
+  --radius-md:6px;
+  --radius-lg:10px;
+  --radius-button:33px;
+  --radius-pill:999px;
+  --border-width-hairline:1px;
+  --border-width-thick:2px;
+  --border-width-rule:4px;
+}

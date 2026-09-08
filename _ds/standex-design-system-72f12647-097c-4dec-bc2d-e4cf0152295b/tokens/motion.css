@@ -1,0 +1,12 @@
+/* Motion is functional: short, eased, no bounce, no spring. */
+:root{
+  --duration-instant:80ms; /* @kind other */
+  --duration-fast:150ms; /* @kind other */
+  --duration-base:220ms; /* @kind other */
+  --duration-slow:400ms; /* @kind other */
+  --duration-reveal:700ms; /* @kind other */
+  --easing-standard:cubic-bezier(.4,0,.2,1); /* @kind other */
+  --easing-out:cubic-bezier(0,0,.2,1); /* @kind other */
+  --easing-in:cubic-bezier(.4,0,1,1); /* @kind other */
+  --transition-control:background-color var(--duration-fast) var(--easing-standard),color var(--duration-fast) var(--easing-standard),border-color var(--duration-fast) var(--easing-standard),box-shadow var(--duration-fast) var(--easing-standard);
+}

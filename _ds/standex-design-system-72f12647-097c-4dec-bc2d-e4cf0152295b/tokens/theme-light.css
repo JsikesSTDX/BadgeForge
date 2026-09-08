@@ -1,0 +1,70 @@
+/* Explicit light scope. `:root` already carries these values, so this file exists
+   for one reason: to let a light region sit INSIDE a dark page — a side-by-side
+   theme specimen, a persistently white panel, a print preview. It re-declares
+   exactly the aliases `theme-dark.css` overrides, so `[data-theme="light"]`
+   always wins back the full light set no matter what it is nested in.
+   Activate with <html data-theme="light"> or on any wrapper element. */
+[data-theme="light"]{
+  /* Text */
+  --text-heading:var(--blue-600);
+  --text-body:var(--gray-600);
+  --text-muted:var(--gray-500);
+  --text-subtle:var(--gray-400);
+  --text-on-dark:var(--standex-white);
+  --text-on-dark-muted:rgba(255,255,255,.76);
+  --text-link:var(--blue-600);
+  --text-link-hover:var(--aqua-500);
+  --text-accent:var(--green-500);
+
+  /* Surfaces */
+  --surface-page:var(--standex-white);
+  --surface-subtle:var(--standex-off-white);
+  --surface-card:var(--standex-white);
+  --surface-card-subtle:var(--standex-off-white);
+  --surface-inverse:var(--blue-600);
+  --surface-inverse-deep:var(--blue-800);
+  --surface-accent:var(--aqua-500);
+  --surface-highlight:var(--green-500);
+  --surface-overlay:rgba(17,30,46,.62);
+
+  /* Borders */
+  --border-subtle:var(--gray-200);
+  --border-default:var(--gray-300);
+  --border-strong:var(--blue-600);
+  --border-on-dark:rgba(255,255,255,.28);
+  --rule-accent:var(--green-500);
+
+  /* Controls */
+  --button-primary-bg:var(--blue-600);
+  --button-primary-fg:var(--standex-white);
+  --button-primary-bg-hover:var(--standex-white);
+  --button-primary-fg-hover:var(--blue-600);
+  --button-primary-border-hover:var(--blue-600);
+  --button-primary-bg-active:var(--blue-700);
+  --button-secondary-bg:transparent;
+  --button-secondary-fg:var(--blue-600);
+  --button-secondary-border:var(--blue-600);
+
+  /* Fields */
+  --field-bg:var(--standex-white);
+  --field-bg-disabled:var(--gray-100);
+  --field-border:var(--gray-300);
+  --field-border-focus:var(--standex-blue);
+  --field-text:var(--blue-600);
+  --field-placeholder:var(--gray-400);
+  --control-accent:var(--standex-blue);
+  --control-track:var(--gray-300);
+  --control-knob:var(--standex-white);
+  --tooltip-bg:var(--blue-800);
+  --tooltip-fg:var(--standex-white);
+
+  /* Elevation */
+  --shadow-xs:0 1px 2px rgba(17,30,46,.06);
+  --shadow-sm:0 2px 6px rgba(17,30,46,.08);
+  --shadow-md:0 6px 18px rgba(17,30,46,.10);
+  --shadow-lg:0 16px 40px rgba(17,30,46,.14);
+  --shadow-focus:0 0 0 3px rgba(37,64,97,.28);
+  --shadow-inset-hairline:inset 0 -1px 0 rgba(17,30,46,.08);
+  --focus-ring:0 0 0 3px rgba(37,64,97,.28); /* @kind shadow */
+  --focus-ring-on-dark:0 0 0 3px rgba(255,255,255,.55); /* @kind shadow */
+}

@@ -1,0 +1,72 @@
+/* Dark mode. Standex Blue is already the brand's dark field, so dark mode is
+   built downward from it rather than to neutral black: the page sits on
+   --blue-900, panels on --blue-800, and Standex Off White carries body copy.
+   Standex Green and Aqua keep their emphasis role but step one stop lighter so
+   they clear WCAG AA on navy. Activate with <html data-theme="dark">. */
+[data-theme="dark"]{
+  /* Text */
+  --text-heading:#F4F6FA;
+  --text-body:#C7D2E0;
+  --text-muted:#9FAEC1;
+  --text-subtle:#7E8DA1;
+  --text-on-dark:#F4F6FA;
+  --text-on-dark-muted:rgba(244,246,250,.76);
+  --text-link:#9EC2E6;
+  --text-link-hover:#C6E0F2;
+  --text-accent:var(--green-400);
+
+  /* Surfaces */
+  --surface-page:var(--blue-900);
+  --surface-subtle:#16283c;
+  --surface-card:var(--blue-800);
+  --surface-card-subtle:#16283c;
+  --surface-inverse:var(--standex-off-white);
+  --surface-inverse-deep:var(--standex-white);
+  --surface-accent:var(--aqua-500);
+  --surface-highlight:var(--green-500);
+  --surface-overlay:rgba(8,15,24,.74);
+
+  /* Borders */
+  --border-subtle:rgba(244,246,250,.13);
+  --border-default:rgba(244,246,250,.24);
+  --border-strong:#9EC2E6;
+  --border-on-dark:rgba(244,246,250,.28);
+  --rule-accent:var(--green-400);
+
+  /* Controls — the brand's navy/white inversion flips: white static, navy-tinted hover */
+  --button-primary-bg:var(--standex-off-white);
+  --button-primary-fg:var(--blue-800);
+  --button-primary-bg-hover:transparent;
+  --button-primary-fg-hover:var(--standex-off-white);
+  --button-primary-border-hover:var(--standex-off-white);
+  --button-primary-bg-active:#DCE3EE;
+  --button-secondary-bg:transparent;
+  --button-secondary-fg:var(--standex-off-white);
+  --button-secondary-border:rgba(244,246,250,.42);
+
+  /* Fields */
+  --field-bg:#16283c;
+  --field-bg-disabled:#101d2c;
+  --field-border:rgba(244,246,250,.24);
+  --field-border-focus:#9EC2E6;
+  --field-text:#F4F6FA;
+  --field-placeholder:#7E8DA1;
+  --control-accent:#9EC2E6;
+  --control-track:rgba(244,246,250,.24);
+  --control-knob:var(--standex-white);
+  --tooltip-bg:var(--standex-off-white);
+  --tooltip-fg:var(--blue-800);
+
+  /* Elevation — shadows read as depth pools, not lifts */
+  --shadow-xs:0 1px 2px rgba(4,9,16,.45);
+  --shadow-sm:0 2px 6px rgba(4,9,16,.5);
+  --shadow-md:0 6px 18px rgba(4,9,16,.55);
+  --shadow-lg:0 16px 40px rgba(4,9,16,.62);
+  --shadow-focus:0 0 0 3px rgba(158,194,230,.42);
+  --shadow-inset-hairline:inset 0 -1px 0 rgba(244,246,250,.14);
+  --focus-ring:0 0 0 3px rgba(158,194,230,.42); /* @kind shadow */
+  --focus-ring-on-dark:0 0 0 3px rgba(158,194,230,.42); /* @kind shadow */
+
+  /* Logo: use the white artwork in dark mode */
+  --logo-preferred:white; /* @kind other */
+}
